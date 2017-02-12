@@ -1,0 +1,45 @@
+.calendar-space{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 17.5rem;
+    text-align: center;
+}
+.calendar-space-title{
+    line-height: 2rem;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+.calendar-space-close{
+     float: right;
+     line-height: 2rem;
+}
+.calendar-space > .calendar-space-select{
+    display: flex;
+    justify-content: space-around;
+}
+.calendar-space > .calendar-space-select > span,.calendar-space > .calendar-space-select > select{
+    width: 4rem;
+}
+.calendar-space > .calendar-space-header,.calendar-space > .calendar-space-select,.calendar-space > .calendar-space-week{
+    height: 2rem;
+}
+.calendar-space > .calendar-space-week,.calendar-space > .date{
+    display: flex;
+    justify-content: center;
+}
+.calendar-space .cell{
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    width: 2.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+    cursor: pointer;
+}
+.calendar-space > .date-show{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.calendar-space .cell-virtual{
+    color: gray;
+}
