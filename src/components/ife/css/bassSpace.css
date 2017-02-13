@@ -1,0 +1,100 @@
+/*base*/
+/*基本样式:重置,宽高,文字排版,定位,浮动,清除浮动*/
+/*重置*/
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p{list-style-type: none;padding: 0;margin: 0;}
+a{text-decoration: none; color: black}
+/*宽高*/
+.wid1rem{width: 1rem}
+.hei1rem{height: 1rem}
+.wid1P5rem{width: 1.5rem}
+.hei1P5rem{height: 1.5rem}
+.wid2rem{width: 2rem}
+.hei2rem{height: 2rem}
+.wid3rem{width: 3rem}
+.hei3rem{height: 3rem}
+.wid5rem{width: 5rem}
+.hei5rem{height: 5rem}
+.wid18rem{width: 18rem}
+.hei18rem{height: 18rem}
+.wid22rem{width: 22rem}
+.hei22rem{height: 22rem}
+.wid25rem{width: 25rem}
+.hei25rem{height: 25rem}
+.wid35rem{width: 35rem}
+.hei35rem{height: 35rem}
+.hei121px{height: 121px}
+.hei41px{height: 41px}
+.hei57px{height: 57px}
+.line-height57{line-height: 57px}
+.hundred-per-cent{width: 100%;height: 100%}
+.wid-hundred{width: 100%}
+/*margin & padding*/
+.margin2rem{margin: 2rem}
+.margin-tb1rem{margin: 1rem 0}
+.margin-tb2rem{margin: 2rem 0}
+.margin-tb2rem-auto{margin: 2rem auto}
+.margin-lr1rem{margin: 0 1rem}
+.margin-lr2rem{margin: 0 2rem}
+.margin-tb6rem-auto{margin: 6rem auto}
+.margin-lr12px-auto{margin: auto 12px}
+.margin-hor-30px > span{ margin: 0 15px}
+.padding-left-16px{ padding-left: 16px}
+/*文字排版*/
+.fz12{font-size:12px;}
+.fz13{font-size:13px;}
+.fz14{font-size:14px;}
+.fz22{font-size: 22px}
+.fz1rem{font-size:1rem;}
+.fz2rem{font-size:2rem;}
+.fz3rem{font-size:3rem;}
+.fz5rem{font-size:5rem;}
+/*字体*/
+.ffMicrosoft{font-family: "Microsoft YaHei UI"}
+/***定位***/
+/*相对定位*/
+.relative{ position: relative}
+/*相对定位*/
+.absolute{ position: absolute}
+/*底部绝对定位*/
+.bottom0{ bottom: 0;}
+/*右方绝对定位*/
+.right0{ right: 0;}
+/*垂直且左右居中*/
+.vertical-horizontal-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*inline水平居中*/
+.hor-inline-center{  text-align: center;  }
+/*inline垂直居中*/
+.ver-inline{  vertical-align: middle;  }
+/***颜色***/
+.red{color: red}
+.white{color: white}
+.black{color: black}
+.colorE7504D{color: #E7504D}
+.background-color-2F2F38{background-color: #2F2F38}
+/***浮动***/
+.float-left{float: left}
+.float-right{float: right}
+/***清除浮动***/
+.clear-float:after{content: "";display: block;clear: both}
+/*弹性布局*/
+.flex-layout{ display: flex;  flex-wrap: wrap;  }
+.inline-flex-layout{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/*弹性布局的垂直方向*/
+.flex-vertical{  flex-direction: column;  }
+/*弹性布局,item平均分布*/
+.flex-item-stretch{  justify-content: space-between;  }
+/*弹性布局,item居中分布*/
+.flex-item-center{ justify-content: center;}
+/*弹性布局,垂直item大小相等*/
+.flex-vertical-item{  margin: 16px auto 16px auto;  width: 100%;  }
+/*弹性布局,水平item*/
+.flex-horizontal{  padding: 0 39px 0 39px;  }

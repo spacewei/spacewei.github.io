@@ -1,0 +1,88 @@
+/*page css*/
+/*header*/
+@media (max-width: 646px){ .header-all{  height: auto;  line-height: normal; } }
+.logo img{  margin-right: 12px;  }
+.header-img-title{  left: 5rem;  transform: translateY(-50%);  }
+.header-img-title h1{ margin-bottom: 1rem;  }
+.header-img-title p{ margin-bottom: 3rem;  }
+@media (max-width: 646px){
+    .header-img-title h1,.header-img-title p{font-size: inherit  }
+    .header-img-title input[type=button]{  width: 100%;  height: 100%;  }
+}
+@media (max-width: 282px){
+    .header-img-title h1{ margin-bottom: auto;}
+    .header-img-title p{ margin-bottom: auto;}
+    .header-img-title{ left: auto}
+}
+/*第一个菜单*/
+/*雪碧图*/
+.task-7{  background: url(../img/baiduE07/task_1_7_1.png) top left no-repeat;  display: inline-block;  }
+.task-7-r2-c2{  width: 42px;  height: 42px;  background-position: -10px -10px;  }
+.task-7-r2-c8{  width: 41px;  height: 40px;  background-position: -10px -62px;  }
+.task-7-r3-c6{  width: 35px;  height: 40px;  background-position: -10px -112px;  }
+.task-7-r3-c4 {  width: 35px;  height: 40px;  background-position: -10px -162px;  }
+/*第二个菜单*/
+.menu2-title-div{  background-color: #EDECEC;  color: #909090;
+}
+div.menu2-content{  top: 4rem;  transform: translateX(-50%);  }
+.menu2-content h2{  margin-bottom: 1rem;  border-bottom: solid white 3px;  }
+div.menu2-input{  top: 11rem;  transform: translateX(-50%);  }
+@media (max-width: 480px){
+    .menu2-content-div{ height: 30rem;}
+    div.menu2-input{  top: 50%;  transform: translateX(-50%);  }
+}
+/*action区*/
+.action-img-div{  margin: 6.5rem 0;}
+.action-img:nth-child(2) h4{
+    text-indent: 1rem;
+    font-size: 200%;
+    letter-spacing: 1rem;
+    margin-top: 0;
+}
+/*action区雪碧图*/
+.task_1_7_1_action{ background:url(../img/baiduE07/task_1_7_1_r2_c8.png) top left no-repeat; }
+.task_1_7_1_action0{ width:219px; height:337px; background-position:-10px -10px; }
+.task_1_7_1_action1{ width:219px; height:337px; background-position:-10px -357px; }
+.task_1_7_1_action2{ width:219px; height:337px; background-position:-10px -704px; }
+.task_1_7_1_action3{ width:219px; height:337px; background-position:-10px -1051px; }
+/*menu3*/
+.menu3{  flex-wrap: wrap;  }
+.menu3-img0-div{  flex: 2 1 860px;  }
+.menu3-div{  flex: 1 1 430px;  height: 571px;  }
+.menu3-img0-text{  z-index: 999;  }
+.menu3-img0-text h2{  font-size: 50px;  }
+.menu3-img0-text h1{
+    font-size: 158px;
+    display: inline-block;
+    line-height: 153px;
+}
+.menu3-img0-text p{ line-height: 35px;  }
+@media (max-width: 450px){
+    .menu3-img0-text h2,.menu3-img0-text h1,.menu3-img0-text p{ font-size: inherit;  }
+    .menu3-img0-text h1{ line-height: normal;}
+}
+.menu3-detail-content p{  text-align: left;  line-height: 48px;  }
+.menu3-more0{  background-color: #FF0000;  }
+.menu3-more1 h2:after{  border: solid #ABABAA 2px;  }
+.menu3-more0 a,.menu3-more1 a{  margin-top: 1.5rem;  }
+.menu3-more0 a{  background-color: #FF0000;  border: solid white 2px;  }
+/*号召区*/
+.slogan h2:after{  border: solid #EB6664 2px;  margin: 12px auto 12px auto;  }
+/*服务条款和输入联系方式*/
+.agreement{  flex: 1 1 319px;  }
+.contact-input{  flex: 2 2 638px;  }
+.agreement p{  margin: 1rem auto 0 0;  }
+/*底部*/
+footer{  height: 420px;  background-color: #32353E;  }
+footer h1{margin: 0 auto 1rem auto}
+footer form a{  background-color: #6F7178;  }
+/*footer 雪碧图*/
+.task_1_7_footer{ background:url(../img/baiduE07/task_1_7_footer.png) top left no-repeat;width:29px; height:25px; }
+.task_1_7_1_r2_c8{ background-position:-10px -10px; }
+.task_1_7_1_r2_c6{ background-position:-10px -45px; }
+.task_1_7_1_r2_c4{ background-position:-10px -80px; }
+.task_1_7_1_r2_c2{ background-position:-10px -115px; }
+@media (max-width: 485px){ .footer-icon{  margin: auto 30px;} }
+/*底部的返回顶栏*/
+.footer-back span{  left: 100px;  bottom: 1rem;  }
+.footer-back a{  right: 40px;  bottom: 1rem;  }
