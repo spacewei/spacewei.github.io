@@ -5,7 +5,7 @@
     /*日历插件的构造函数*/
     var calendarSpacePlug = function(type,calendarSite) {
         this.date = this.calendarPlug(type,calendarSite);
-        this.getCalendarSpaceDate();
+        //this.getCalendarSpaceDate();
     };
     /*构造函数的原型,共用calendarPlug*/
     calendarSpacePlug.prototype = {
@@ -414,27 +414,13 @@
             return returnDate;
         },
         getCalendarSpaceDate:function(){
-            return this.date;
+            var date = {};
+            date.year = this.date.year;
+            date.month = this.date.month + 1;
+            date.date = this.date.date;
+            return date;
         }
     };
     //在全局作用域中注册calendarSpacePlug!不然外界无法访问匿名立即执行函数中任何对象及基本数据!
     window['calendarSpacePlug'] = calendarSpacePlug;
 })(jQuery);
-//new出实例,使用插件!
-var xxx11 = new calendarSpacePlug('Show','.calendar-space-there21');
-console.log('xxx11:');
-console.log(xxx11.getCalendarSpaceDate());
-var xxx12 = new calendarSpacePlug('Show','.calendar-space-there22');
-console.log('xxx12:');
-console.log(xxx12.getCalendarSpaceDate());
-var xxx13 = new calendarSpacePlug('Show','.calendar-space-there23');
-
-var xxx21 = new calendarSpacePlug('Toggle','.calendar-space-there11');
-console.log('-------------------');
-console.log('xxx21:');
-console.log(xxx21.getCalendarSpaceDate());
-var xxx22 = new calendarSpacePlug('Toggle','.calendar-space-there12');
-console.log('xxx22:');
-console.log(xxx22.getCalendarSpaceDate());
-console.log('-------------------');
-var xxx23 = new calendarSpacePlug('Toggle','.calendar-space-there13');
